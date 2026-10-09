@@ -35,7 +35,7 @@ categories = {                                                             # Pro
     "Electronics": (100, 2000),
     "Fashion": (20, 500),
     "Grocery": (1, 50),
-    "Furniture": (50, 1500),
+    "Furniture": (500, 15000),
     "Sports": (10, 800)
 }
 
@@ -80,7 +80,7 @@ with open(file_path, mode="w", newline="", encoding="utf-8") as file:
     ])
 
     for i in range(NUM_RECORDS):
-        transaction_id = random.randint(1, NUM_RECORDS // 2)  # Introduce some duplicate transaction IDs as only 5lakhs unique IDs for 1 million/lakhs records
+        transaction_id = random.randint(1, NUM_RECORDS // 2)  # Introduce some duplicate transaction IDs by doing 5lakhs unique IDs for 1 million/lakhs records
         order_date = random_date(start_date, end_date) 
         ship_date = order_date + timedelta(days=random.randint(-3, 10)) #-3 to -1 is not possible ship_date >= order_date
         # Introduce some records where ship date is before order date to simulate data quality issues

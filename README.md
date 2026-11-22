@@ -12,6 +12,9 @@ The project follows the Medallion Architecture:
 - **Silver Layer** cleans and validates the Bronze data.
 - **Gold Layer** creates analytical datasets for reporting and business insights.
 
+  <img width="2075" height="1200" alt="powerBI_dashboard_page-0001" src="https://github.com/user-attachments/assets/ebc1fb12-abb5-474a-b01d-91488f64010a" />
+**Final Business Intelligence Extracted in a POWER BI dashboard**
+
 The Spark cluster runs inside Docker and consists of one Spark Master and two Spark Worker nodes.
 # Project Structure
 
